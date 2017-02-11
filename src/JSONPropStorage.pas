@@ -5,32 +5,31 @@ unit JSONPropStorage;
 interface
 
 uses
-  Classes, SysUtils, Forms, JSONConf;
+  Classes, SysUtils, Forms, JSONConf, LazUTF8;
 
 type
 { TCustomJSONPropStorage }
   TCustomJSONPropStorage = class(TFormPropertyStorage)
   private
     FCount : Integer;
-    FReadOnly : Boolean;
     FJSONFileName: string;
-    FRootObjectPath: string;
+    FRootObjectPath: String;
     FJSONConf: TJSONConfig;
   protected
-    function GetJSONFileName: string; virtual;
-    function RootSection: string; override;
+    function GetJSONFileName: String; virtual;
+    function RootSection: String; override;
     function FixPath(const APath: String): String; virtual;
 
     property JSONConf: TJSONConfig read FJSONConf;
   public
     procedure StorageNeeded(ReadOnly: Boolean); override;
     procedure FreeStorage; override;
-    function  DoReadString(const Section, Ident, Default: string): string; override;
-    procedure DoWriteString(const Section, Ident, Value: string); override;
-    procedure DoEraseSections(const ARootObjectPath : string);override;
+    function  DoReadString(const Section, Ident, Default: String): String; override;
+    procedure DoWriteString(const Section, Ident, Value: String); override;
+    procedure DoEraseSections(const ARootObjectPath : String);override;
   public
-    property JSONFileName: string read FJSONFileName write FJSONFileName;
-    property RootObjectPath: string read FRootObjectPath write FRootObjectPatht;
+    property JSONFileName: String read FJSONFileName write FJSONFileName;
+    property RootObjectPath: String read FRootObjectPath write FRootObjectPath;
   end;
 
 { TJSONPropStorage }
@@ -56,7 +55,7 @@ end;
 
 { TCustomJSONPropStorage }
 
-function TCustomJSONPropStorage.GetJSONFileName: string;
+function TCustomJSONPropStorage.GetJSONFileName: String;
 begin
   If (FJSONFileName<>'') then
     Result:=FJSONFileName
@@ -72,7 +71,7 @@ begin
 {$endif}
 end;
 
-function TCustomJSONPropStorage.RootSection: string;
+function TCustomJSONPropStorage.RootSection: String;
 begin
   if (FRootObjectPath<>'') then
     Result := FRootObjectPath
@@ -107,18 +106,18 @@ begin
 end;
 
 function TCustomJSONPropStorage.DoReadString(const Section, Ident,
-  Default: string): string;
+  Default: String): String;
 begin
   Result := FJSONConf.GetValue(FixPath(Section)+'/'+Ident, Default);
 end;
 
 procedure TCustomJSONPropStorage.DoWriteString(const Section, Ident,
-  Value: string);
+  Value: String);
 begin
   FJSONConf.SetValue(FixPath(Section)+'/'+Ident, Value);
 end;
 
-procedure TCustomJSONPropStorage.DoEraseSections(const ARootObjectPath: string);
+procedure TCustomJSONPropStorage.DoEraseSections(const ARootObjectPath: String);
 begin
   FJSONConf.DeletePath(FixPath(ARootObjectPath));
 end;

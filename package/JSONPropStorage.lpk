@@ -17,6 +17,7 @@
     <Files Count="1">
       <Item1>
         <Filename Value="../src/JSONPropStorage.pas"/>
+        <HasRegisterProc Value="True"/>
         <UnitName Value="JSONPropStorage"/>
       </Item1>
     </Files>
