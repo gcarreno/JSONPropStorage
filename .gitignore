@@ -1,5 +1,6 @@
 # JSONPropStorage project specific
 /bin
+/gui
 
 # Compiled l10n files: .mo should be ignored
 *.mo
