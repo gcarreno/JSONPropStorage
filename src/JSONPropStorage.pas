@@ -91,8 +91,8 @@ begin
   if (FJSONConf=nil) and not (csDesigning in ComponentState) then
   begin
     FJSONConf := TJSONConfig.Create(nil);
-    FJSONConf.Filename := GetJSONFileName;
     FJSONConf.Formatted := True;
+    FJSONConf.Filename := GetJSONFileName;
   end;
   Inc(FCount);
 end;
