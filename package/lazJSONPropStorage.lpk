@@ -13,7 +13,7 @@
     </CompilerOptions>
     <Description Value="Application Session Property Storage with JSON"/>
     <License Value="Needs license"/>
-    <Version Major="1" Release="1" Build="1"/>
+    <Version Major="1" Release="2" Build="3"/>
     <Files Count="1">
       <Item1>
         <Filename Value="../src/JSONPropStorage.pas"/>
@@ -27,7 +27,7 @@
       </Item1>
     </RequiredPkgs>
     <UsageOptions>
-      <UnitPath Value="$(PkgOutDir)"/>
+      <UnitPath Value="$(PkgOutDir);/home/gcarreno/Programming/JSONPropStorage/src"/>
     </UsageOptions>
     <PublishOptions>
       <Version Value="2"/>

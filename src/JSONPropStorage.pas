@@ -92,6 +92,7 @@ begin
   begin
     FJSONConf := TJSONConfig.Create(nil);
     FJSONConf.Filename := GetJSONFileName;
+    FJSONConf.Formatted := True;
   end;
   Inc(FCount);
 end;
