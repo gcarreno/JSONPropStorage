@@ -2,12 +2,12 @@
   This source is only used to compile and install the package.
  }
 
-unit JSONPropStorage;
+unit lazJSONPropStorage;
 
 interface
 
 uses
-  LazarusPackageIntf;
+  JSONPropStorage, LazarusPackageIntf;
 
 implementation
 
@@ -17,5 +17,5 @@ begin
 end;
 
 initialization
-  RegisterPackage('JSONPropStorage', @Register);
+  RegisterPackage('lazJSONPropStorage', @Register);
 end.

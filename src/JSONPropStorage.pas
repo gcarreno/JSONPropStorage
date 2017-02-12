@@ -83,6 +83,7 @@ end;
 function TCustomJSONPropStorage.FixPath(const APath: String): String;
 begin
   Result:=StringReplace(APath,'.','/',[rfReplaceAll]);
+  Result:=StringReplace(APath,'_','/',[rfReplaceAll]);
 end;
 
 procedure TCustomJSONPropStorage.StorageNeeded(ReadOnly: Boolean);
@@ -108,13 +109,13 @@ end;
 function TCustomJSONPropStorage.DoReadString(const Section, Ident,
   Default: String): String;
 begin
-  Result := FJSONConf.GetValue(FixPath(Section)+'/'+Ident, Default);
+  Result := FJSONConf.GetValue(FixPath(Section)+'/'+FixPath(Ident), Default);
 end;
 
 procedure TCustomJSONPropStorage.DoWriteString(const Section, Ident,
   Value: String);
 begin
-  FJSONConf.SetValue(FixPath(Section)+'/'+Ident, Value);
+  FJSONConf.SetValue(FixPath(Section)+'/'+FixPath(Ident), Value);
 end;
 
 procedure TCustomJSONPropStorage.DoEraseSections(const ARootObjectPath: String);

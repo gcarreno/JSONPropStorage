@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CONFIG>
   <Package Version="4">
-    <Name Value="JSONPropStorage"/>
+    <Name Value="lazJSONPropStorage"/>
     <Type Value="RunAndDesignTime"/>
     <Author Value="Gustavo Carreno &lt;guscarreno@gmail.com>"/>
     <CompilerOptions>
       <Version Value="11"/>
       <SearchPaths>
         <OtherUnitFiles Value="../src"/>
-        <UnitOutputDirectory Value="../bin/lib/$(TargetCPU)-$(TargetOS)"/>
+        <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
       </SearchPaths>
     </CompilerOptions>
     <Description Value="Application Session Property Storage with JSON"/>
     <License Value="Needs license"/>
-    <Version Minor="1" Build="1"/>
+    <Version Major="1" Release="1" Build="1"/>
     <Files Count="1">
       <Item1>
         <Filename Value="../src/JSONPropStorage.pas"/>
