@@ -1,0 +1,119 @@
+object frmMain: TfrmMain
+  Left = 0
+  Height = 497
+  Top = 0
+  Width = 719
+  Caption = 'frmMain'
+  ClientHeight = 497
+  ClientWidth = 719
+  OnClose = FormClose
+  OnCreate = FormCreate
+  SessionProperties = 'Height;Left;Top;Width;WindowState;psMain.Position'
+  Visible = False
+  object psMain: TPairSplitter
+    Cursor = crVSplit
+    Left = 0
+    Height = 497
+    Top = 0
+    Width = 719
+    Align = alClient
+    Position = 300
+    SplitterType = pstVertical
+    object pssContent: TPairSplitterSide
+      Cursor = crArrow
+      Left = 0
+      Height = 300
+      Top = 0
+      Width = 719
+      ClientWidth = 719
+      ClientHeight = 300
+      object panButtons: TPanel
+        Left = 0
+        Height = 52
+        Top = 0
+        Width = 719
+        Align = alTop
+        ClientHeight = 52
+        ClientWidth = 719
+        TabOrder = 0
+        object btnReload: TButton
+          Left = 8
+          Height = 25
+          Top = 4
+          Width = 64
+          Caption = 'Reload'
+          OnClick = btnReloadClick
+          TabOrder = 0
+        end
+        object lblConfFileName: TLabel
+          Left = 80
+          Height = 17
+          Top = 8
+          Width = 114
+          Caption = 'lblConfFileName'
+          ParentColor = False
+        end
+        object lblTitleConfig: TLabel
+          Left = 8
+          Height = 17
+          Top = 32
+          Width = 94
+          Caption = 'File Contents:'
+          ParentColor = False
+        end
+      end
+      object memConfig: TMemo
+        Left = 0
+        Height = 248
+        Top = 52
+        Width = 719
+        Align = alClient
+        ReadOnly = True
+        TabOrder = 1
+      end
+    end
+    object pssLog: TPairSplitterSide
+      Cursor = crArrow
+      Left = 0
+      Height = 192
+      Top = 305
+      Width = 719
+      ClientWidth = 719
+      ClientHeight = 192
+      object memLog: TMemo
+        Left = 0
+        Height = 174
+        Top = 18
+        Width = 719
+        Align = alClient
+        ReadOnly = True
+        ScrollBars = ssAutoVertical
+        TabOrder = 0
+      end
+      object panTitleLog: TPanel
+        Left = 0
+        Height = 18
+        Top = 0
+        Width = 719
+        Align = alTop
+        ClientHeight = 18
+        ClientWidth = 719
+        TabOrder = 1
+        object lblTitleLog: TLabel
+          Left = 8
+          Height = 17
+          Top = 0
+          Width = 30
+          Caption = 'Log:'
+          ParentColor = False
+        end
+      end
+    end
+  end
+  object JSONPropStorage1: TJSONPropStorage
+    StoredValues = <>
+    Formatted = True
+    left = 568
+    top = 96
+  end
+end
