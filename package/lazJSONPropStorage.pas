@@ -7,13 +7,14 @@ unit lazJSONPropStorage;
 interface
 
 uses
-  JSONPropStorage, LazarusPackageIntf;
+  JSONPropStorage, Register_TJSONPropStorage, LazarusPackageIntf;
 
 implementation
 
 procedure Register;
 begin
-  RegisterUnit('JSONPropStorage', @JSONPropStorage.Register);
+  RegisterUnit('Register_TJSONPropStorage', @Register_TJSONPropStorage.Register
+    );
 end;
 
 initialization

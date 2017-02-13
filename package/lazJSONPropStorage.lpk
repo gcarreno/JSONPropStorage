@@ -27,18 +27,26 @@
   You should have received a copy of the GNU Lesser General Public License
   along with this program.  If not, see &lt;http://www.gnu.org/licenses/>.
 "/>
-    <Version Major="1" Release="3" Build="7"/>
-    <Files Count="1">
+    <Version Major="1" Release="4" Build="8"/>
+    <Files Count="2">
       <Item1>
         <Filename Value="../src/JSONPropStorage.pas"/>
-        <HasRegisterProc Value="True"/>
         <UnitName Value="JSONPropStorage"/>
       </Item1>
+      <Item2>
+        <Filename Value="../src/Register_TJSONPropStorage.pas"/>
+        <HasRegisterProc Value="True"/>
+        <AddToUsesPkgSection Value="False"/>
+        <UnitName Value="Register_TJSONPropStorage"/>
+      </Item2>
     </Files>
-    <RequiredPkgs Count="1">
+    <RequiredPkgs Count="2">
       <Item1>
-        <PackageName Value="LCL"/>
+        <PackageName Value="LCLBase"/>
       </Item1>
+      <Item2>
+        <PackageName Value="FCL"/>
+      </Item2>
     </RequiredPkgs>
     <UsageOptions>
       <UnitPath Value="$(PkgOutDir);$(PkgOutDir)/../src"/>

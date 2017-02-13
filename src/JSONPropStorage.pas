@@ -67,14 +67,14 @@ type
     property OnRestoreProperties;
   end;
 
-procedure Register;
+//procedure Register;
 
 implementation
 
-procedure Register;
+{procedure Register;
 begin
   RegisterComponents('Misc',[TJSONPropStorage]);
-end;
+end;}
 
 { TCustomJSONPropStorage }
 
