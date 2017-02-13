@@ -15,9 +15,12 @@ type
     FJSONFileName: string;
     FRootObjectPath: String;
     FJSONConf: TJSONConfig;
+    FFormatted: Boolean;
   protected
     function GetJSONFileName: String; virtual;
     function RootSection: String; override;
+    function GetFormatted: Boolean;
+    procedure SetFormatted(Value: Boolean);
     function FixPath(const APath: String): String; virtual;
 
     property JSONConf: TJSONConfig read FJSONConf;
@@ -30,13 +33,15 @@ type
   public
     property JSONFileName: String read FJSONFileName write FJSONFileName;
     property RootObjectPath: String read FRootObjectPath write FRootObjectPath;
+    property Formatted: Boolean read GetFormatted write SetFormatted;
   end;
 
 { TJSONPropStorage }
   TJSONPropStorage = class(TCustomJSONPropStorage)
   published
-    Property StoredValues;
+    property StoredValues;
     property JSONFileName;
+    property Formatted;
     property Active;
     property OnSavingProperties;
     property OnSaveProperties;
@@ -80,6 +85,18 @@ begin
   Result := FixPath(Result);
 end;
 
+function TCustomJSONPropStorage.GetFormatted: Boolean;
+begin
+  Result := FFormatted;
+end;
+
+procedure TCustomJSONPropStorage.SetFormatted(Value: Boolean);
+begin
+  FFormatted := Value;
+  if (FJSONConf<>nil) then
+    FJSONConf.Formatted := Value;
+end;
+
 function TCustomJSONPropStorage.FixPath(const APath: String): String;
 begin
   Result:=StringReplace(APath,'.','/',[rfReplaceAll]);
@@ -91,7 +108,7 @@ begin
   if (FJSONConf=nil) and not (csDesigning in ComponentState) then
   begin
     FJSONConf := TJSONConfig.Create(nil);
-    FJSONConf.Formatted := True;
+    FJSONConf.Formatted := FFormatted;
     FJSONConf.Filename := GetJSONFileName;
   end;
   Inc(FCount);
