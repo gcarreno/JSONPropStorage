@@ -13,22 +13,22 @@
       </SearchPaths>
     </CompilerOptions>
     <Description Value="Application Session Property Storage with JSON storage"/>
-    <License Value="  Copyright 2017 Gustavo Carreno &lt;guscarreno@gmail.com>
+    <License Value="Copyright 2017 Gustavo Carreno &lt;guscarreno@gmail.com>
 
-  This component is free software: you can redistribute it and/or modify
-  it under the terms of the GNU Lesser General Public License as published by
-  the Free Software Foundation, either version 3 of the License, or
-  (at your option) any later version.
+This component is free software: you can redistribute it and/or modify
+it under the terms of the GNU Lesser General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
 
-  This program is distributed in the hope that it will be useful,
-  but WITHOUT ANY WARRANTY; without even the implied warranty of
-  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  GNU Lesser General Public License for more details.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Lesser General Public License for more details.
 
-  You should have received a copy of the GNU Lesser General Public License
-  along with this program.  If not, see &lt;http://www.gnu.org/licenses/>.
+You should have received a copy of the GNU Lesser General Public License
+along with this program.  If not, see &lt;http://www.gnu.org/licenses/>.
 "/>
-    <Version Major="1" Release="4" Build="9"/>
+    <Version Major="1" Release="5" Build="10"/>
     <Files Count="2">
       <Item1>
         <Filename Value="../src/JSONPropStorage.pas"/>

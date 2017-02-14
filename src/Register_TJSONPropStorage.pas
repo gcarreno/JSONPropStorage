@@ -24,7 +24,7 @@ interface
 uses
   Classes,
   SysUtils,
-  {LResources,  To be used when Icon is done}
+  LResources,
   JSONPropStorage;
 
 Procedure Register;
@@ -33,7 +33,7 @@ implementation
 
 Procedure Register;
 begin
-  {.$I tjsonpropstorage_icon.lrs}   // [optional] if you have a custom component icon [as generate by "lazres.exe"]
+  {$I tjsonpropstorage_icon.lrs}
   RegisterComponents('Misc', [TJSONPropStorage]);
 end;
 
