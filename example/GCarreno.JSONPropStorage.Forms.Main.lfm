@@ -1,7 +1,7 @@
 object frmMain: TfrmMain
-  Left = 0
+  Left = 354
   Height = 497
-  Top = 0
+  Top = 147
   Width = 719
   Caption = 'frmMain'
   ClientHeight = 497
@@ -9,7 +9,7 @@ object frmMain: TfrmMain
   OnClose = FormClose
   OnCreate = FormCreate
   SessionProperties = 'Height;Left;Top;Width;WindowState;psMain.Position'
-  Visible = False
+  LCLVersion = '1.7'
   object psMain: TPairSplitter
     Cursor = crVSplit
     Left = 0
@@ -113,7 +113,7 @@ object frmMain: TfrmMain
   object JSONPropStorage1: TJSONPropStorage
     StoredValues = <>
     Formatted = True
-    left = 568
-    top = 96
+    Left = 568
+    Top = 96
   end
 end

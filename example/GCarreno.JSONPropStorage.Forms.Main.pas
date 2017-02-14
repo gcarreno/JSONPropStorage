@@ -24,9 +24,9 @@ type
     psMain: TPairSplitter;
     pssContent: TPairSplitterSide;
     pssLog: TPairSplitterSide;
-    procedure btnReloadClick(Sender: TObject);
-    procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormCreate(Sender: TObject);
+    procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
+    procedure btnReloadClick(Sender: TObject);
   private
   public
     { public declarations }
@@ -44,16 +44,6 @@ var
 
 { TfrmMain }
 
-procedure TfrmMain.FormClose(Sender: TObject; var CloseAction: TCloseAction);
-begin
-  CloseAction := caFree;
-end;
-
-procedure TfrmMain.btnReloadClick(Sender: TObject);
-begin
-  memConfig.Lines.LoadFromFile(confFileName);
-end;
-
 procedure TfrmMain.FormCreate(Sender: TObject);
 begin
   memLog.Lines.Add('Assigning config file:');
@@ -65,6 +55,17 @@ begin
   JSONPropStorage1.JSONFileName := confFileName;
   memLog.Lines.Add('Setting RootObjectPath on JSONPropSTorage');
   JSONPropStorage1.RootObjectPath := 'application';
+end;
+
+procedure TfrmMain.FormClose(Sender: TObject; var CloseAction: TCloseAction);
+begin
+  CloseAction := caFree;
+end;
+
+procedure TfrmMain.btnReloadClick(Sender: TObject);
+begin
+  memLog.Lines.Add('Loading: '+confFileName);
+  memConfig.Lines.LoadFromFile(confFileName);
 end;
 
 end.
