@@ -52,7 +52,7 @@
   <CompilerOptions>
     <Version Value="11"/>
     <Target>
-      <Filename Value="pjsonpropstorage"/>
+      <Filename Value="../bin/pjsonpropstorage"/>
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
