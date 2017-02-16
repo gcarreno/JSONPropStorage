@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fpdoc-descriptions>
+  <package name="lazJSONPropStorage">
+    <module name="JSONPropStorage">
+      <element name="TCustomJSONPropStorage.JSONFileName">
+        <short>Full path and name of the file containing the values</short>
+        <descr>This <var>String</var> expresses the full path and name of the file that contains the Form Session Properties values you have chosen to save</descr>
+      </element>
+      <element name="TCustomJSONPropStorage.RootObjectPath">
+        <short>JSON Path for the Root Object</short>
+        <descr>This <var>String</var> contains a path to the Root Object that will encapsulate all the Session Properties of this Form.</descr>
+      </element>
+      <element name="TJSONPropStorage">
+        <short>Main Class'</short>
+        <seealso>
+          <link id="TINIPropStrorage">TINIPropStorage</link>
+          <link id="TXMLPropStrorage">TXMLPropStorage</link>
+        </seealso>
+      </element>
+    </module>
+  </package>
+</fpdoc-descriptions>

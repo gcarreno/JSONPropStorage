@@ -3,12 +3,12 @@
   <ProjectSession>
     <Version Value="10"/>
     <BuildModes Active="Default"/>
-    <Units Count="13">
+    <Units Count="18">
       <Unit0>
         <Filename Value="pjsonpropstorage.lpr"/>
         <IsPartOfProject Value="True"/>
         <CursorPos X="11" Y="8"/>
-        <UsageCount Value="25"/>
+        <UsageCount Value="78"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
@@ -19,9 +19,9 @@
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="37"/>
-        <CursorPos X="44" Y="54"/>
-        <UsageCount Value="25"/>
+        <TopLine Value="65"/>
+        <CursorPos Y="85"/>
+        <UsageCount Value="78"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
@@ -31,14 +31,14 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="2"/>
         <CursorPos X="27" Y="8"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="5"/>
       </Unit2>
       <Unit3>
         <Filename Value="../src/JSONPropStorage.pas"/>
         <EditorIndex Value="3"/>
-        <TopLine Value="22"/>
-        <CursorPos Y="19"/>
-        <UsageCount Value="13"/>
+        <TopLine Value="44"/>
+        <CursorPos X="12" Y="154"/>
+        <UsageCount Value="39"/>
         <Loaded Value="True"/>
       </Unit3>
       <Unit4>
@@ -47,7 +47,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="94"/>
         <CursorPos Y="125"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="5"/>
       </Unit4>
       <Unit5>
         <Filename Value="gcarreno_jsonpropstorage.pas"/>
@@ -55,25 +55,25 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="92"/>
         <CursorPos Y="125"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="5"/>
       </Unit5>
       <Unit6>
         <Filename Value="GCarreno_JSONPropStorage.pas"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="22" Y="8"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="5"/>
       </Unit6>
       <Unit7>
         <Filename Value="../package/lazJSONPropStorage.pas"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="5"/>
       </Unit7>
       <Unit8>
         <Filename Value="../src/Register_TJSONPropStorage.pas"/>
         <EditorIndex Value="2"/>
         <TopLine Value="8"/>
         <CursorPos X="26" Y="31"/>
-        <UsageCount Value="12"/>
+        <UsageCount Value="38"/>
         <Loaded Value="True"/>
       </Unit8>
       <Unit9>
@@ -81,119 +81,109 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="459"/>
         <CursorPos X="6" Y="474"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="5"/>
       </Unit9>
       <Unit10>
         <Filename Value="../../../Development/FreePascal/fpc/packages/fcl-net/src/ssockets.pp"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="59"/>
         <CursorPos X="3" Y="75"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="5"/>
       </Unit10>
       <Unit11>
         <Filename Value="../../../Development/FreePascal/fpc/rtl/objpas/classes/classesh.inc"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="907"/>
         <CursorPos X="3" Y="923"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="5"/>
       </Unit11>
       <Unit12>
         <Filename Value="../../Lazarus/Components/OnlinePackageManager/opkman_installer.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="150"/>
         <CursorPos X="6" Y="167"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="5"/>
       </Unit12>
+      <Unit13>
+        <Filename Value="../docs/jsonpropstorage.xml"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="5" Y="18"/>
+        <UsageCount Value="6"/>
+        <DefaultSyntaxHighlighter Value="XML"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="../../../fpcupdeluxe/lazarus/lcl/forms.pp"/>
+        <UnitName Value="Forms"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1744"/>
+        <CursorPos X="3" Y="1758"/>
+        <UsageCount Value="5"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="../../../fpcupdeluxe/lazarus/lcl/controls.pp"/>
+        <UnitName Value="Controls"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2211"/>
+        <CursorPos X="3" Y="2333"/>
+        <UsageCount Value="5"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="../../../fpcupdeluxe/lazarus/lcl/propertystorage.pas"/>
+        <UnitName Value="PropertyStorage"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="502"/>
+        <CursorPos X="26" Y="519"/>
+        <UsageCount Value="5"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="../../../fpcupdeluxe/fpcsrc/packages/fcl-base/src/rttiutils.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="112"/>
+        <CursorPos Y="136"/>
+        <UsageCount Value="5"/>
+      </Unit17>
     </Units>
-    <JumpHistory Count="22" HistoryIndex="21">
+    <JumpHistory Count="10" HistoryIndex="9">
       <Position1>
-        <Filename Value="GCarreno.JSONPropStorage.Forms.Main.pas"/>
-        <Caret Line="8" Column="66"/>
+        <Filename Value="../src/Register_TJSONPropStorage.pas"/>
+        <Caret Line="18"/>
       </Position1>
       <Position2>
-        <Filename Value="GCarreno.JSONPropStorage.Forms.Main.pas"/>
-        <Caret Line="40" Column="3"/>
+        <Filename Value="../src/JSONPropStorage.pas"/>
+        <Caret Line="120" Column="9" TopLine="97"/>
       </Position2>
       <Position3>
-        <Filename Value="GCarreno.JSONPropStorage.Forms.Main.pas"/>
-        <Caret Line="42" Column="3" TopLine="10"/>
+        <Filename Value="../src/JSONPropStorage.pas"/>
+        <Caret Line="154" Column="17" TopLine="129"/>
       </Position3>
       <Position4>
-        <Filename Value="GCarreno.JSONPropStorage.Forms.Main.pas"/>
-        <Caret Line="15" Column="41"/>
+        <Filename Value="../src/JSONPropStorage.pas"/>
+        <Caret Line="148" TopLine="21"/>
       </Position4>
       <Position5>
-        <Filename Value="GCarreno.JSONPropStorage.Forms.Main.pas"/>
-        <Caret Line="25" Column="24"/>
+        <Filename Value="../src/JSONPropStorage.pas"/>
+        <Caret Line="67" Column="19" TopLine="24"/>
       </Position5>
       <Position6>
         <Filename Value="GCarreno.JSONPropStorage.Forms.Main.pas"/>
-        <Caret Line="15" Column="23"/>
+        <Caret Line="75" Column="25" TopLine="50"/>
       </Position6>
       <Position7>
         <Filename Value="GCarreno.JSONPropStorage.Forms.Main.pas"/>
-        <Caret Line="14" Column="24"/>
+        <Caret Line="73" Column="46" TopLine="46"/>
       </Position7>
       <Position8>
         <Filename Value="GCarreno.JSONPropStorage.Forms.Main.pas"/>
-        <Caret Line="8" Column="66"/>
+        <Caret Line="85" Column="37" TopLine="62"/>
       </Position8>
       <Position9>
         <Filename Value="GCarreno.JSONPropStorage.Forms.Main.pas"/>
-        <Caret Line="40" Column="5" TopLine="13"/>
+        <Caret Line="98" Column="31" TopLine="71"/>
       </Position9>
       <Position10>
         <Filename Value="GCarreno.JSONPropStorage.Forms.Main.pas"/>
-        <Caret Line="42" Column="3" TopLine="14"/>
+        <Caret Line="88" Column="32" TopLine="76"/>
       </Position10>
-      <Position11>
-        <Filename Value="GCarreno.JSONPropStorage.Forms.Main.pas"/>
-        <Caret Line="18" Column="31"/>
-      </Position11>
-      <Position12>
-        <Filename Value="GCarreno.JSONPropStorage.Forms.Main.pas"/>
-        <Caret Line="21" Column="27" TopLine="14"/>
-      </Position12>
-      <Position13>
-        <Filename Value="GCarreno.JSONPropStorage.Forms.Main.pas"/>
-        <Caret Line="22" Column="27" TopLine="14"/>
-      </Position13>
-      <Position14>
-        <Filename Value="GCarreno.JSONPropStorage.Forms.Main.pas"/>
-        <Caret Line="23" Column="27" TopLine="14"/>
-      </Position14>
-      <Position15>
-        <Filename Value="GCarreno.JSONPropStorage.Forms.Main.pas"/>
-        <Caret Line="49" Column="48" TopLine="20"/>
-      </Position15>
-      <Position16>
-        <Filename Value="GCarreno.JSONPropStorage.Forms.Main.pas"/>
-        <Caret Line="56" Column="41" TopLine="25"/>
-      </Position16>
-      <Position17>
-        <Filename Value="GCarreno.JSONPropStorage.Forms.Main.pas"/>
-        <Caret Line="51" Column="44" TopLine="31"/>
-      </Position17>
-      <Position18>
-        <Filename Value="GCarreno.JSONPropStorage.Forms.Main.pas"/>
-        <Caret Line="56" Column="19" TopLine="27"/>
-      </Position18>
-      <Position19>
-        <Filename Value="GCarreno.JSONPropStorage.Forms.Main.pas"/>
-        <Caret Line="68" Column="43" TopLine="37"/>
-      </Position19>
-      <Position20>
-        <Filename Value="GCarreno.JSONPropStorage.Forms.Main.pas"/>
-        <Caret Line="69" Column="43" TopLine="38"/>
-      </Position20>
-      <Position21>
-        <Filename Value="GCarreno.JSONPropStorage.Forms.Main.pas"/>
-        <Caret Line="70" Column="43" TopLine="39"/>
-      </Position21>
-      <Position22>
-        <Filename Value="../src/Register_TJSONPropStorage.pas"/>
-        <Caret Line="18"/>
-      </Position22>
     </JumpHistory>
   </ProjectSession>
 </CONFIG>

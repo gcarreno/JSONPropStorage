@@ -111,8 +111,22 @@ object frmMain: TfrmMain
     end
   end
   object JSONPropStorage1: TJSONPropStorage
-    StoredValues = <>
+    StoredValues = <    
+      item
+        Name = 'StoredValue1'
+        Value = '1'
+        KeyString = 'SV1'
+      end    
+      item
+        Name = 'StoredValue2'
+        Value = '2'
+        KeyString = 'SV2'
+      end>
     Formatted = True
+    OnSavingProperties = JSONPropStorage1SavingProperties
+    OnSaveProperties = JSONPropStorage1SaveProperties
+    OnRestoringProperties = JSONPropStorage1RestoringProperties
+    OnRestoreProperties = JSONPropStorage1RestoreProperties
     Left = 568
     Top = 96
   end

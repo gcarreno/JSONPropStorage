@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, PairSplitter,
-  StdCtrls, ExtCtrls, JSONPropStorage;
+  StdCtrls, ExtCtrls, JSONPropStorage, PropertyStorage;
 
 { TfrmMain }
 
@@ -27,6 +27,10 @@ type
     procedure FormCreate(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure btnReloadClick(Sender: TObject);
+    procedure JSONPropStorage1RestoreProperties(Sender: TObject);
+    procedure JSONPropStorage1RestoringProperties(Sender: TObject);
+    procedure JSONPropStorage1SaveProperties(Sender: TObject);
+    procedure JSONPropStorage1SavingProperties(Sender: TObject);
   private
   public
     { public declarations }
@@ -63,9 +67,52 @@ begin
 end;
 
 procedure TfrmMain.btnReloadClick(Sender: TObject);
+var
+  oValue: TStoredValue;
+  index: Integer;
 begin
   memLog.Lines.Add('Loading: '+confFileName);
   memConfig.Lines.LoadFromFile(confFileName);
+  memLog.Lines.Add('Listing Stored Values.');
+  memConfig.Lines.Add('Stored Values:');
+  for index := 0 to JSONPropStorage1.StoredValues.Count - 1 do
+  begin
+    memConfig.Lines.Add(
+      'Name: '+
+      JSONPropStorage1.StoredValues[index].Name+
+      '='+
+      JSONPropStorage1.StoredValues[index].Value);
+  end;
+end;
+
+procedure TfrmMain.JSONPropStorage1RestoreProperties(Sender: TObject);
+begin
+  if Assigned(memLog) then
+  begin
+    memLog.Lines.Add('Event: OnRestoreProperties');
+    memLog.Lines.Add(#9'Class Name: '+Sender.ClassName);
+  end;
+end;
+
+procedure TfrmMain.JSONPropStorage1RestoringProperties(Sender: TObject);
+begin
+  if Assigned(memLog) then
+  begin
+    memLog.Lines.Add('Event: OnRestoringProperties');
+    memLog.Lines.Add(#9'Class Name: '+Sender.ClassName);
+  end;
+end;
+
+procedure TfrmMain.JSONPropStorage1SaveProperties(Sender: TObject);
+begin
+  if Assigned(memLog) then
+    memLog.Lines.Add('Event: OnSaveProperties');
+end;
+
+procedure TfrmMain.JSONPropStorage1SavingProperties(Sender: TObject);
+begin
+  if Assigned(memLog) then
+    memLog.Lines.Add('Event: OnSavingProperties');
 end;
 
 end.

@@ -30,7 +30,7 @@ type
   TCustomJSONPropStorage = class(TFormPropertyStorage)
   private
     FCount : Integer;
-    FJSONFileName: string;
+    FJSONFileName: String;
     FRootObjectPath: String;
     FJSONConf: TJSONConfig;
     FFormatted: Boolean;
