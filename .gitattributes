@@ -3,14 +3,16 @@
 
 # Explicitly declare text files you want to always be normalized and converted
 # to native line endings on checkout.
-*.inc text
-*.pas text
-*.pp  text
-*.lpk text
-*.lpi text
-*.lps text
-*.lpr text
-*.def text
+*.inc  text
+*.pas  text
+*.pp   text
+*.lpk  text
+*.lpi  text
+*.lps  text
+*.lpr  text
+*.def  text
+*.xml  text
+*.html text
 
 # Declare files that will always have CRLF line endings on checkout.
 *.dpk   text eol=crlf
@@ -26,6 +28,7 @@
 *.res binary
 *.ico binary
 *.dll binary
+*.chm binary
 
 # Keep these files from archive/exports, mainly from production.
 .gitignore     export-ignore
