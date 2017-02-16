@@ -28,7 +28,7 @@ GNU Lesser General Public License for more details.
 You should have received a copy of the GNU Lesser General Public License
 along with this program.  If not, see &lt;http://www.gnu.org/licenses/>.
 "/>
-    <Version Major="1" Release="5" Build="11"/>
+    <Version Major="1" Release="5" Build="12"/>
     <Files Count="2">
       <Item1>
         <Filename Value="../src/JSONPropStorage.pas"/>

@@ -3,12 +3,12 @@
   <ProjectSession>
     <Version Value="10"/>
     <BuildModes Active="Default"/>
-    <Units Count="18">
+    <Units Count="19">
       <Unit0>
         <Filename Value="pjsonpropstorage.lpr"/>
         <IsPartOfProject Value="True"/>
         <CursorPos X="11" Y="8"/>
-        <UsageCount Value="78"/>
+        <UsageCount Value="85"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
@@ -19,9 +19,9 @@
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="65"/>
-        <CursorPos Y="85"/>
-        <UsageCount Value="78"/>
+        <TopLine Value="98"/>
+        <CursorPos Y="121"/>
+        <UsageCount Value="85"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
@@ -36,9 +36,9 @@
       <Unit3>
         <Filename Value="../src/JSONPropStorage.pas"/>
         <EditorIndex Value="3"/>
-        <TopLine Value="44"/>
+        <TopLine Value="135"/>
         <CursorPos X="12" Y="154"/>
-        <UsageCount Value="39"/>
+        <UsageCount Value="42"/>
         <Loaded Value="True"/>
       </Unit3>
       <Unit4>
@@ -73,7 +73,7 @@
         <EditorIndex Value="2"/>
         <TopLine Value="8"/>
         <CursorPos X="26" Y="31"/>
-        <UsageCount Value="38"/>
+        <UsageCount Value="41"/>
         <Loaded Value="True"/>
       </Unit8>
       <Unit9>
@@ -142,8 +142,15 @@
         <CursorPos Y="136"/>
         <UsageCount Value="5"/>
       </Unit17>
+      <Unit18>
+        <Filename Value="../../../fpcupdeluxe/fpcsrc/packages/fcl-xml/src/xmlconf.pp"/>
+        <UnitName Value="XMLConf"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="34"/>
+        <UsageCount Value="9"/>
+      </Unit18>
     </Units>
-    <JumpHistory Count="10" HistoryIndex="9">
+    <JumpHistory Count="11" HistoryIndex="10">
       <Position1>
         <Filename Value="../src/Register_TJSONPropStorage.pas"/>
         <Caret Line="18"/>
@@ -184,6 +191,10 @@
         <Filename Value="GCarreno.JSONPropStorage.Forms.Main.pas"/>
         <Caret Line="88" Column="32" TopLine="76"/>
       </Position10>
+      <Position11>
+        <Filename Value="GCarreno.JSONPropStorage.Forms.Main.pas"/>
+        <Caret Line="9" Column="64"/>
+      </Position11>
     </JumpHistory>
   </ProjectSession>
 </CONFIG>

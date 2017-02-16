@@ -90,7 +90,7 @@ begin
   if Assigned(memLog) then
   begin
     memLog.Lines.Add('Event: OnRestoreProperties');
-    memLog.Lines.Add(#9'Class Name: '+Sender.ClassName);
+    memLog.Lines.Add(#9'Sender: '+Sender.ClassName);
   end;
 end;
 
@@ -99,20 +99,26 @@ begin
   if Assigned(memLog) then
   begin
     memLog.Lines.Add('Event: OnRestoringProperties');
-    memLog.Lines.Add(#9'Class Name: '+Sender.ClassName);
+    memLog.Lines.Add(#9'Sender: '+Sender.ClassName);
   end;
 end;
 
 procedure TfrmMain.JSONPropStorage1SaveProperties(Sender: TObject);
 begin
   if Assigned(memLog) then
+  begin
     memLog.Lines.Add('Event: OnSaveProperties');
+    memLog.Lines.Add(#9'Sender: '+Sender.ClassName);
+  end;
 end;
 
 procedure TfrmMain.JSONPropStorage1SavingProperties(Sender: TObject);
 begin
   if Assigned(memLog) then
+  begin
     memLog.Lines.Add('Event: OnSavingProperties');
+    memLog.Lines.Add(#9'Sender: '+Sender.ClassName);
+  end;
 end;
 
 end.
