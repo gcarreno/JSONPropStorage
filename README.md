@@ -1,6 +1,6 @@
-#JSONPropStorage
+# JSONPropStorage
 
-##Warning
+## Warning
 
 This component has been added to the Lazarus SVN on r54159.
 
